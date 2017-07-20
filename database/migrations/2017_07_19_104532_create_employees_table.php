@@ -17,18 +17,18 @@ class CreateEmployeesTable extends Migration
           $table->increments('id');
           $table->string('prefix');
           $table->string('name');
-          $table->string('last');
-          $table->string('nick');
-          $table->string('name_E');
-          $table->string('last_E');
-          $table->string('nick_E');
-          $table->string('birth');
-          $table->string('tel');
-          $table->string('email');
+          $table->string('lastName');
+          $table->string('nickName');
+          $table->string('nameEN');
+          $table->string('lastNameEn');
+          $table->string('nickNameEn');
+          $table->date('birth');
+          $table->Integer('tel');
+          $table->string('email')->unique();
           $table->string('position');
-          $table->string('position_E');
+          $table->string('positionEn');
           $table->string('type');
-          $table->string('size');
+          $table->string('shirtSize');
         });
     }
 
